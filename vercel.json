@@ -1,15 +1,14 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "app.py",
-      "use": "@vercel/python"
-    }
+    { "src": "app.py", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
-    }
-  ]
+    { "src": "/(.*)", "dest": "/app.py" }
+  ],
+  "env": {
+    "CARS24_AUTH": "Basic YzJiX2Zyb250ZW5kOko1SXRmQTk2bTJfY3lRVk00dEtOSnBYaFJ0c0NtY1h1",
+    "CARS24_API_VERSION": "2025-09",
+    "ADMIN_TOKEN": ""
+  }
 }
